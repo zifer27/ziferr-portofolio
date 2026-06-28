@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zifer - Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/terminal.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ===== SCROLL PROGRESS ===== -->
+    <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+
+    <!-- ===== PARTICLES CANVAS ===== -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Zifer<span>.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="section home">
+        <div class="container">
+            <div class="home-grid">
+                <!-- Kiri -->
+                <div class="home-left">
+                    <span class="badge">🚀 Kelas 8 · Future Developer</span>
+                    <h1 class="text-3d">Zifer</h1>
+                    <p class="typing">I'm a <span class="typed-text"></span></p>
+                    <p class="desc">
+                        Siswa kelas 8 yang <strong>passion</strong> di dunia coding. 
+                        Suka eksplorasi teknologi baru dan bikin project keren!
+                    </p>
+                    <div class="btn-group">
+                        <a href="#projects" class="btn btn-primary magnetic">
+                            <span>Lihat Project</span>
+                            <svg viewBox="0 0 24 24"><path d="M14 5l7 7-7 7"/><path d="M3 12h18"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary magnetic">Hubungi Saya</a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="social-link" data-tooltip="GitHub">🐙</a>
+                        <a href="#" class="social-link" data-tooltip="Instagram">📷</a>
+                        <a href="#" class="social-link" data-tooltip="LinkedIn">💼</a>
+                        <a href="#" class="social-link" data-tooltip="YouTube">▶️</a>
+                    </div>
+                </div>
+                <!-- Kanan -->
+                <div class="home-right">
+                    <div class="cube-container">
+                        <div class="cube-3d">
+                            <div class="cube-face front">
+                                <img src="https://files.catbox.moe/1pv8kt.jpg" alt="Zifer" />
+                            </div>
+                            <div class="cube-face back"><span class="cube-text">{ }</span></div>
+                            <div class="cube-face right"><span class="cube-text">&lt;/&gt;</span></div>
+                            <div class="cube-face left"><span class="cube-text">-!</span></div>
+                            <div class="cube-face top"><span class="cube-text">✦</span></div>
+                            <div class="cube-face bottom"><span class="cube-text">:-)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-3d-small">Tentang Saya</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <div class="about-icon">🧑‍💻</div>
+                    <h3>Siapa Saya?</h3>
+                    <p>Halo! Saya <strong>Zifer</strong>, siswa kelas 8 yang sangat antusias dengan dunia pemrograman. Mulai belajar coding dari usia 12 tahun!</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-icon">🎯</div>
+                    <h3>Misi Saya</h3>
+                    <p>Terus belajar dan mengembangkan skill coding untuk menciptakan teknologi yang bermanfaat. Target: jadi <strong>Full-Stack Developer</strong>!</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-icon">💡</div>
+                    <h3>Fun Fact</h3>
+                    <p>Pertama kali coding bikin game di Scratch. Sekarang udah bisa bikin website, bot Discord, dan aplikasi Flutter!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS (UPDATED) ===== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-3d-small">Skill Coding</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- PHP 70% -->
+                <div class="skill-item glass" data-percent="70">
+                    <div class="skill-info">
+                        <span class="skill-icon">🐘</span>
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+                <!-- Golang 75% -->
+                <div class="skill-item glass" data-percent="75">
+                    <div class="skill-info">
+                        <span class="skill-icon">🐹</span>
+                        <span class="skill-name">Golang</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+                <!-- Python 85% -->
+                <div class="skill-item glass" data-percent="85">
+                    <div class="skill-info">
+                        <span class="skill-icon">🐍</span>
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+                <!-- JavaScript 85% -->
+                <div class="skill-item glass" data-percent="85">
+                    <div class="skill-info">
+                        <span class="skill-icon">⚡</span>
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+                <!-- Flutter 70% -->
+                <div class="skill-item glass" data-percent="70">
+                    <div class="skill-info">
+                        <span class="skill-icon">📱</span>
+                        <span class="skill-name">Flutter</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+                <!-- Java 60% -->
+                <div class="skill-item glass" data-percent="60">
+                    <div class="skill-info">
+                        <span class="skill-icon">☕</span>
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+                <!-- Kotlin 65% -->
+                <div class="skill-item glass" data-percent="65">
+                    <div class="skill-info">
+                        <span class="skill-icon">📲</span>
+                        <span class="skill-name">Kotlin</span>
+                        <span class="skill-percent">0%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-3d-small">💳 Credit Website</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- Terminal -->
+            <div class="terminal-wrapper">
+                <div class="terminal glass">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">zifer@portfolio:~$</span>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-line">╔═══════════════════════════════════════════════╗</div>
+                        <div class="terminal-line">║    🌟 TERIMA KASIH SUDAH BERKUNJUNG! 🌟     ║</div>
+                        <div class="terminal-line">╚═══════════════════════════════════════════════╝</div>
+                        <div class="terminal-line"></div>
+                        <div class="terminal-line">👤 <span class="terminal-highlight">Developer:</span> Zifer</div>
+                        <div class="terminal-line">📚 <span class="terminal-highlight">Kelas:</span> 8 SMP</div>
+                        <div class="terminal-line">💻 <span class="terminal-highlight">Skill:</span> Golang, PHP, JS, Flutter, Python, Java, Kotlin</div>
+                        <div class="terminal-line">🚀 <span class="terminal-highlight">Project:</span> Portfolio 3D Ultimate</div>
+                        <div class="terminal-line"></div>
+                        <div class="terminal-line">⭐ <span class="terminal-highlight">Rating Website:</span></div>
+                        <div class="terminal-line rating-stars">★★★★★ <span class="rating-number">5.0</span></div>
+                        <div class="terminal-line"></div>
+                        <div class="terminal-line">📝 <span class="terminal-highlight">Pesan:</span></div>
+                        <div class="terminal-line">"Terima kasih sudah mampir ke website portofolio saya!</div>
+                        <div class="terminal-line"> Semoga kamu terinspirasi untuk belajar coding 🚀"</div>
+                        <div class="terminal-line"></div>
+                        <div class="terminal-line terminal-blink">zifer@portfolio:~$ _</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rating Cards -->
+            <div class="rating-grid">
+                <div class="rating-card glass">
+                    <div class="rating-icon gradient-1">⭐</div>
+                    <h3>Kualitas Desain</h3>
+                    <div class="stars">★★★★★ <span>5.0</span></div>
+                    <p>gg bg</p>
+                </div>
+                <div class="rating-card glass">
+                    <div class="rating-icon gradient-2">🚀</div>
+                    <h3>Kecepatan</h3>
+                    <div class="stars">★★★★★ <span>5.0</span></div>
+                    <p>cepet banget wok</p>
+                </div>
+                <div class="rating-card glass">
+                    <div class="rating-icon gradient-3">🎨</div>
+                    <h3>Kreativitas</h3>
+                    <div class="stars">★★★★★ <span>5.0</span></div>
+                    <p>bagus jdi ange.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-3d-small">Hubungi Saya</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item glass">
+                        <span>📧</span>
+                        <p>zifer@email.com</p>
+                    </div>
+                    <div class="contact-item glass">
+                        <span>📱</span>
+                        <p>+62 812-6363-0850</p>
+                    </div>
+                    <div class="contact-item glass">
+                        <span>📍</span>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+                <form class="contact-form glass" id="contactForm">
+                    <input type="text" placeholder="Nama Kamu" required />
+                    <input type="email" placeholder="Email Kamu" required />
+                    <textarea rows="4" placeholder="Pesan buat Zifer..." required></textarea>
+                    <button type="submit" class="btn btn-primary btn-submit magnetic">
+                        <span>Kirim Pesan</span>
+                        <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 <strong>Zifer</strong> · Built with ❤️ and lots of ☕</p>
+            <div class="footer-social">
+                <a href="#">🐙</a>
+                <a href="#">📷</a>
+                <a href="#">💼</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JS ===== -->
+    <script src="js/particles.js"></script>
+    <script src="js/cube3d.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/magnetic.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
